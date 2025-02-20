@@ -1,79 +1,62 @@
-# Dataset
- menggunakan dataset https://github.com/rfajri27/a555-dashboard/blob/main/all_data.csv 
+# 📊 **Fashion Sales Dataset**  
 
-Dataset yang diberikan terlihat seperti data penjualan produk fashion. Setiap baris mewakili satu transaksi atau pembelian, dan setiap kolom memberikan informasi spesifik tentang transaksi tersebut. Berikut adalah penjelasan untuk setiap kolom dalam dataset:
+📌 **Source Dataset:** [GitHub - all_data.csv](https://github.com/rfajri27/a555-dashboard/blob/main/all_data.csv)  
 
-sales_id: ID penjualan atau nomor urut penjualan.
+---
 
-order_id: ID pesanan atau nomor urut pesanan.
+## 🛍️ **Overview**  
 
-product_id: ID produk atau nomor urut produk.
+This dataset represents **fashion product sales transactions**, where each row corresponds to a single transaction or purchase.  
+It includes various attributes such as **product details, customer information, transaction data, and delivery status**.  
 
-price_per_unit: Harga per unit produk.
+✅ **Use Cases:**  
+- 📈 **Sales Analysis** – Identify trends and best-selling products.  
+- 🛒 **Customer Insights** – Analyze purchasing behavior based on age, gender, and location.  
+- 🚚 **Delivery Performance** – Evaluate delivery times and optimize logistics.  
 
-quantity_x: Jumlah unit yang dibeli (pada saat pembelian).
+---
 
-total_price: Total harga pembelian (jumlah unit * harga per unit).
+## 📂 **Dataset Information**  
 
-product_type: Jenis produk yang dibeli.
+This dataset contains the following columns:  
 
-product_name: Nama produk.
+| 🏷 **Column Name** | 📝 **Description** |
+|-------------------|------------------|
+| 🔢 `sales_id` | Unique sales transaction ID |
+| 🛍️ `order_id` | Order number |
+| 🏷️ `product_id` | Unique product ID |
+| 💰 `price_per_unit` | Price per unit of product |
+| 🔢 `quantity_x` | Quantity purchased |
+| 💵 `total_price` | Total purchase price (`quantity_x * price_per_unit`) |
+| 👕 `product_type` | Type of product |
+| 🏷️ `product_name` | Name of the product |
+| 📏 `size` | Product size (e.g., S, M, L, XS) |
+| 🎨 `colour` | Product color |
+| 💲 `price` | Product price |
+| 📦 `quantity_y` | Available stock at the time of purchase |
+| 📝 `description` | Product description |
+| 👤 `customer_id` | Unique customer ID |
+| 💳 `payment` | Payment method used |
+| 📆 `order_date` | Date of purchase |
+| 🚚 `delivery_date` | Delivery date |
+| ⏳ `delivery_time` | Delivery time |
+| 🏷️ `customer_name` | Customer's name |
+| 🚻 `gender` | Customer's gender |
+| 🔢 `age` | Customer's age |
+| 🏡 `home_address` | Customer's home address |
+| 📍 `zip_code` | Customer's zip code |
+| 🏙️ `city` | Customer's city |
+| 🌍 `state` | Customer's state/province |
+| 🌎 `country` | Customer's country |
+| 🔄 `status` | Purchase or account status (e.g., Active) |
+| 👥 `age_group` | Customer's age group (e.g., Seniors, Adults) |
 
-size: Ukuran produk (misalnya, S, M, L, XS).
+---
 
-colour: Warna produk.
+## ⚙️ **Environment Setup**  
 
-price: Harga produk.
+Follow these steps to set up the environment for analyzing and visualizing this dataset:  
 
-quantity_y: Jumlah produk dalam stok (pada saat pembelian).
-
-description: Deskripsi produk.
-
-customer_id: ID pelanggan atau nomor urut pelanggan.
-
-payment: Metode pembayaran yang digunakan.
-
-order_date: Tanggal pembelian.
-
-delivery_date: Tanggal pengiriman.
-
-delivery_time: Waktu pengiriman.
-
-customer_name: Nama pelanggan.
-
-gender: Jenis kelamin pelanggan.
-
-age: Usia pelanggan.
-
-home_address: Alamat rumah pelanggan.
-
-zip_code: Kode pos pelanggan.
-
-city: Kota pelanggan.
-
-state: Negara bagian atau provinsi.
-
-country: Negara.
-
-status: Status pembelian atau akun pelanggan (misalnya, Active).
-
-age_group: Grup usia pelanggan (misalnya, Seniors, Adults).
-
-# Setup environment
-
-
-```
+### 🏗 **1. Create Virtual Environment**  
+```bash
 python -m venv venv
-
-.\venv\Scripts\activate
-
-pip install pandas numpy matplotlib seaborn streamlit
-```
-
-# Run steamlit 
-
-```
-streamlit run streamlit.py
-```
-
-
