@@ -53,10 +53,38 @@ This dataset contains the following columns:
 
 ---
 
-## ⚙️ **Environment Setup**  
+## ⚙️ **Setup Environment**  
 
 Follow these steps to set up the environment for analyzing and visualizing this dataset:  
 
-### 🏗 **1. Create Virtual Environment**  
+### 🚀 **1. Create Virtual Environment**  
 ```bash
 python -m venv venv
+```
+
+### 🔥 **2. Activate Virtual Environment**  
+**For Windows:**  
+```bash
+.\venv\Scripts\activate
+```
+**For macOS/Linux:**  
+```bash
+source venv/bin/activate
+```
+
+### 📦 **3. Install Required Libraries**  
+```bash
+pip install pandas numpy matplotlib seaborn streamlit
+```
+
+---
+
+## 🎨 **Run Streamlit Dashboard**  
+
+To visualize the dataset using Streamlit, run the following command:  
+```bash
+streamlit run streamlit.py
+```
+
+---
+
